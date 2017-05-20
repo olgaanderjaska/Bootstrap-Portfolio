@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  
   
 <style>
@@ -14,6 +14,32 @@
     box-sizing: border-box;
 
   }
+
+
+.pItems .thumbnail{
+	position: relative;
+}
+
+.pItems .thumbnail img{
+	height:320px;
+}
+
+.tbHeading{
+	position:absolute;
+	width:100%;
+	bottom:35px;
+	left:0;
+	background: #E91E63;
+	padding:10px;
+	text-align: center;
+}
+
+a .tbHeading{
+	color: #ffffff;
+}
+
+
+
   
 </style>
 </head>
@@ -30,9 +56,9 @@
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-           <li><a href="">About</a></li>
-          <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact</a></li>
+           <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
      </div>
    </nav>
@@ -41,49 +67,50 @@
 
 <div class="container">
    <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-9">
     <div class="panel panel-default">
      <div class="panel-heading">
       <h1 class="panel-title">
        <strong>Portfolio</strong> 
         </h1> 
          </div>
-
-          <div class="panel-body ">
-           <div class="col-md-6">
-    	<a href="thumbnail">
-    			<img src="assets/images/Img1.jpeg" alt="" width="269" height="197">
-    			<h2>Hangman</h2>
-    		</a> 
-    		</div>
-    		<div class="col-md-6">
-    	<a href="thumbnail">
-    			<img src="assets/images/Img2.png" alt="" width="269" height="197">
-    			<h2>RPG Game</h2>
-    		</a>
-    		</div>
-    		<div class="col-md-6">
-    	<a href="thumbnail">
-    			<img src="assets/images/Img3.jpg" alt="" width="269" height="197">
-    			<h2>Trivia Game</h2>
-    		</a>
-    		</div>
-    		<div class="col-md-6">
-    	<a href="thumbnail">
-    			<img src="assets/images/Img4.jpeg" alt="" width="269" height="197">
-    			<h2>Rutgers Info Widget</h2>
-    		</a>
-    		</div>
-    		<div class="col-md-6">
-    	<a href="thumbnail">
-    			<img src="assets/images/Img5.jpg" alt="" width="269" height="197">
-    			<h2>Rock Paper Scissors</h2>
-    		</a>
-    	  </div>
-    	 </div>
+			<div class="panel-body pItems row">
+            <div class="col-md-6">
+              <a href="" class="thumbnail">
+                <img src="img/Img1.jpeg" class="img-responsive" alt="">
+                <h2 class="tbHeading">Hangman</h2>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="" class="thumbnail">
+                <img src="img/Img2.png" class="img-responsive" alt="">
+                <h2 class="tbHeading">RPG Game</h2>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="" class="thumbnail">
+                <img src="img/Img3.jpg" class="img-responsive" alt="">
+                <h2 class="tbHeading">Trivia Game</h2>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="" class="thumbnail">
+                <img src="img/Img4.jpeg" class="img-responsive" alt="">
+                <h2 class="tbHeading">Rutgers Info Widget</h2>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="" class="thumbnail">
+                <img src="img/Img5.jpg" class="img-responsive" alt="">
+                <h2 class="tbHeading">Rock Paper Scissors</h2>
+              </a>
+            </div>
+          </div>
         </div>
        </div>
-       </div>
+
+      
+
     <div class="sidebar col-md-3 pull-right">
         <div class="panel panel-default">
          <div class="panel-heading">
@@ -93,23 +120,22 @@
             </div>
              <div class="panel-body">
               <div class="btn-group btn-group-justified">              
-               <img src="assets/images/so.png" width="60">
+               <img src="img/so.png" class="col-md-4" width="50">
                 </a>
                  <a class="">
-                 <img src="assets/images/github.svg" width="60">
+                 <img src="img/github.svg" class="col-md-4" width="50">
                 </a>
                <a class="">
-              <img src="assets/images/linkedin.svg" width="60">
+              <img src="img/linkedin.svg" class="col-md-4" width="50">
              </a>
             </div>
           </div>
         </div>
        </div>
-    
-    
-</div>
+     </div>    
+ </div>
  
-<footer class="footer navbar-fixed-bottom">
+<footer class="footer navbar-bottom">
    <div class="navbar navbar-inverse">
     <div class="container">
       <p class="text-success text-center">
